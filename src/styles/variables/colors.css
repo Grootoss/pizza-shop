@@ -1,0 +1,13 @@
+:root {
+  --color-header-start: #140800;
+  --color-header-middle: #1b0600;
+  --color-header-end: #1c0b00;
+  --color-brand-start: #fea026;
+  --color-brand-end: #fe6630;
+  --color-page: #1e1e1e;
+  --color-surface: #fff;
+  --color-text: #fff;
+  --color-text-muted: #c4bfba;
+  --color-brand-solid: #fe8a20;
+  --color-card: #2a1208;
+}

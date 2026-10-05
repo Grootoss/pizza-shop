@@ -1,0 +1,86 @@
+.footer {
+  width: 1252px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 48px;
+  padding-bottom: 40px;
+}
+
+.top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.logo {
+  flex: 0 0 180px;
+  margin-top: -10px;
+  padding-right: 2px;
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 39px;
+  letter-spacing: -1px;
+  text-decoration: none;
+  background: linear-gradient(
+    90deg,
+    var(--color-brand-start) 0%,
+    var(--color-brand-end) 100%
+  );
+  background-clip: text;
+  color: transparent;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.columnTitle,
+.link {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-decoration: none;
+}
+
+.columnTitle {
+  color: var(--color-text);
+}
+
+.link {
+  color: var(--color-text-muted);
+}
+
+.bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 72px;
+}
+
+.phone {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-decoration: none;
+  background: linear-gradient(
+    90deg,
+    var(--color-brand-start) 0%,
+    var(--color-brand-end) 100%
+  );
+  background-clip: text;
+  color: transparent;
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.social img {
+  display: block;
+  width: 24px;
+  height: 24px;
+}

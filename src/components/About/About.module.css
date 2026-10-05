@@ -1,0 +1,64 @@
+.about {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 1252px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 36px;
+  padding-bottom: 64px;
+}
+
+.copy {
+  flex: 0 1 500px;
+}
+
+.title {
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 58px;
+  letter-spacing: -1px;
+  color: var(--color-text);
+}
+
+.text,
+.note {
+  max-width: 460px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  color: var(--color-text-muted);
+}
+
+.text {
+  margin-top: 20px;
+}
+
+.pizzas {
+  display: block;
+  width: 460px;
+  max-width: none;
+  height: auto;
+  margin-top: 36px;
+}
+
+.note {
+  margin-top: 28px;
+}
+
+.arrow {
+  position: absolute;
+  top: 383px;
+  left: 464px;
+  width: 104px;
+  height: 36px;
+  pointer-events: none;
+}
+
+.hero {
+  display: block;
+  flex: 0 0 680px;
+  width: 680px;
+  height: auto;
+}

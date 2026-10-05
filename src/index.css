@@ -1,0 +1,30 @@
+@import url('./styles/variables/colors.css');
+@import url('./styles/fonts/index.css');
+@import url('./styles/global/index.css');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100%;
+  background: linear-gradient(
+    90deg,
+    var(--color-header-start) 0%,
+    var(--color-header-middle) 48%,
+    var(--color-header-end) 100%
+  );
+}
+
+body {
+  min-height: 100vh;
+  background: transparent;
+}
+
+.app {
+  width: 1512px;
+  min-height: 100vh;
+  margin: 0 auto;
+}

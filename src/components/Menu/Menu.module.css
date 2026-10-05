@@ -1,0 +1,272 @@
+.menu {
+  width: 1252px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 16px;
+  padding-bottom: 64px;
+}
+
+.title {
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 58px;
+  letter-spacing: -1px;
+  text-align: center;
+  color: var(--color-text);
+}
+
+.filters {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 48px;
+  margin-top: 28px;
+}
+
+.filter,
+.filterActive,
+.category,
+.categoryActive {
+  border: 0;
+  background: transparent;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  cursor: pointer;
+}
+
+.filter,
+.category {
+  color: var(--color-text-muted);
+}
+
+.filterActive {
+  height: 44px;
+  padding-right: 24px;
+  padding-left: 24px;
+  border-radius: 22px;
+  font-weight: 800;
+  color: var(--color-text);
+  background: linear-gradient(
+    90deg,
+    var(--color-brand-start) 0%,
+    var(--color-brand-end) 100%
+  );
+}
+
+.categories {
+  display: flex;
+  justify-content: center;
+  gap: 48px;
+  margin-top: 22px;
+  margin-bottom: 36px;
+}
+
+.categoryActive {
+  padding-bottom: 6px;
+  font-weight: 800;
+  color: var(--color-text);
+  border-bottom: 2px solid var(--color-brand-solid);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px 18px 20px;
+  border-radius: 24px;
+  background: var(--color-card);
+}
+
+.photo {
+  width: 168px;
+  height: 168px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.photo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1.55);
+}
+
+.name {
+  margin-top: 16px;
+  font-size: 22px;
+  font-weight: 800;
+  line-height: 27px;
+  text-align: center;
+  color: var(--color-text);
+}
+
+.filling {
+  height: 36px;
+  margin-top: 8px;
+  overflow: hidden;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: center;
+  color: var(--color-text-muted);
+}
+
+.sizes {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.size,
+.sizeActive {
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  border-radius: 50%;
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 17px;
+  cursor: pointer;
+}
+
+.size {
+  border: 1px solid var(--color-text-muted);
+  background: transparent;
+  color: var(--color-text);
+}
+
+.sizeActive {
+  border: 0;
+  color: var(--color-text);
+  background: linear-gradient(
+    90deg,
+    var(--color-brand-start) 0%,
+    var(--color-brand-end) 100%
+  );
+}
+
+.ingredients {
+  width: 100%;
+  height: 40px;
+  margin-top: 16px;
+  border: 1px solid var(--color-brand-solid);
+  border-radius: 20px;
+  background: transparent;
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 17px;
+  color: var(--color-brand-solid);
+  cursor: pointer;
+}
+
+.purchase {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 16px;
+}
+
+.price {
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 24px;
+  color: var(--color-text);
+}
+
+.quantity {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.minus,
+.plus {
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  border-radius: 50%;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 20px;
+  cursor: pointer;
+}
+
+.minus {
+  border: 1px solid var(--color-text-muted);
+  background: transparent;
+  color: var(--color-text);
+}
+
+.plus {
+  border: 0;
+  color: var(--color-text);
+  background: linear-gradient(
+    90deg,
+    var(--color-brand-start) 0%,
+    var(--color-brand-end) 100%
+  );
+}
+
+.count {
+  width: 22px;
+  font-size: 16px;
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+  line-height: 20px;
+  text-align: center;
+  color: var(--color-text);
+}
+
+.order {
+  width: 100%;
+  height: 44px;
+  margin-top: 16px;
+  border: 0;
+  border-radius: 22px;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 20px;
+  color: var(--color-text);
+  background: linear-gradient(
+    90deg,
+    var(--color-brand-start) 0%,
+    var(--color-brand-end) 100%
+  );
+  cursor: pointer;
+}
+
+.popular {
+  margin-top: 48px;
+  margin-bottom: 48px;
+}
+
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 1248 / 286;
+  border-radius: 42px;
+  overflow: hidden;
+  background-image: url('/images/most-popular-desktop.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+.popularTitle {
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 58px;
+  letter-spacing: 1px;
+  text-align: center;
+  color: var(--color-text);
+}

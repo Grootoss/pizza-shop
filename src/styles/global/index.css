@@ -1,0 +1,16 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+}
+
+body {
+  font-family: Montserrat, sans-serif;
+}
+
+button,
+input,
+textarea,
+select {
+  font-family: inherit;
+}

@@ -1,0 +1,13 @@
+/** @type {import('stylelint').Config} */
+export default {
+  extends: ['stylelint-config-standard'],
+  ignoreFiles: ['dist/**', 'node_modules/**'],
+  rules: {
+    'selector-class-pattern': [
+      '^[a-z][a-zA-Z0-9]*$',
+      {
+        message: 'Expected class selector to be camelCase',
+      },
+    ],
+  },
+}
