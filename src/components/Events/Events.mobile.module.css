@@ -1,0 +1,122 @@
+.events {
+  display: none;
+  padding-bottom: 32px;
+}
+
+.title {
+  padding-right: 23px;
+  padding-left: 25px;
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 39px;
+  letter-spacing: -1px;
+  text-align: center;
+  color: var(--color-text);
+}
+
+.text {
+  margin-top: 12px;
+  padding-right: 23px;
+  padding-left: 25px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: center;
+  color: var(--color-text-muted);
+}
+
+.scroller {
+  margin-top: 20px;
+  padding-right: 23px;
+  padding-left: 25px;
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  scrollbar-width: none;
+  cursor: grab;
+  touch-action: pan-x;
+  user-select: none;
+}
+
+.track {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: max-content;
+}
+
+.row {
+  display: flex;
+  gap: 12px;
+}
+
+.scroller:active {
+  cursor: grabbing;
+}
+
+.scroller::-webkit-scrollbar {
+  display: none;
+}
+
+.card {
+  position: relative;
+  flex: 0 0 268px;
+  height: 168px;
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+.wide {
+  flex-basis: calc(268px * 2 + 12px);
+}
+
+.card img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+.content {
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+  left: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.cardTitle {
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 20px;
+  letter-spacing: 1px;
+  white-space: pre-line;
+  color: var(--color-text);
+}
+
+.more {
+  height: 32px;
+  padding-right: 22px;
+  padding-left: 22px;
+  border: 0;
+  border-radius: 16px;
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 17px;
+  color: var(--color-text);
+  background: linear-gradient(
+    90deg,
+    var(--color-brand-start) 0%,
+    var(--color-brand-end) 100%
+  );
+  cursor: pointer;
+}
+
+@media (width <= 430px) {
+  .events {
+    display: block;
+  }
+}

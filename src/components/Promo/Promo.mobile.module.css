@@ -1,0 +1,124 @@
+.promo {
+  display: none;
+  padding-right: 23px;
+  padding-bottom: 40px;
+  padding-left: 25px;
+}
+
+.hero {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.title {
+  margin-top: 8px;
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 48px;
+  letter-spacing: -1px;
+  color: var(--color-text);
+}
+
+.bolt {
+  display: inline-block;
+  width: 30px;
+  height: 40px;
+  vertical-align: -12px;
+}
+
+.text {
+  margin-top: 16px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  color: var(--color-text-muted);
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.order,
+.menuButton {
+  display: inline-flex;
+  align-items: center;
+  height: 44px;
+  padding-right: 22px;
+  padding-left: 22px;
+  border-radius: 22px;
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 17px;
+  cursor: pointer;
+}
+
+.order {
+  border: 0;
+  background: linear-gradient(
+    90deg,
+    var(--color-brand-start) 0%,
+    var(--color-brand-end) 100%
+  );
+  color: var(--color-text);
+}
+
+.menuButton {
+  border: 2px solid var(--color-brand-solid);
+  background: transparent;
+  color: var(--color-brand-solid);
+}
+
+.caption {
+  margin-top: 28px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  color: var(--color-text-muted);
+}
+
+.video {
+  position: relative;
+  width: 196px;
+  margin-top: 12px;
+}
+
+.poster {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+}
+
+.play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 64px;
+  height: 64px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  overflow: hidden;
+  background: transparent;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.play img {
+  display: block;
+  width: 183.13%;
+  max-width: none;
+  height: 186.75%;
+  margin-top: -71.08%;
+  margin-left: -67.47%;
+}
+
+@media (width <= 430px) {
+  .promo {
+    display: block;
+  }
+}

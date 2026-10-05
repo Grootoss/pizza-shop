@@ -1,23 +1,14 @@
 .footer {
-  width: 1252px;
-  margin-right: auto;
-  margin-left: auto;
-  padding-top: 48px;
-  padding-bottom: 40px;
-}
-
-.top {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
+  display: none;
+  flex-direction: column;
+  min-height: 537px;
+  padding: 28px 23px 28px 25px;
 }
 
 .logo {
-  flex: 0 0 180px;
-  margin-top: -10px;
   padding-right: 2px;
-  font-size: 32px;
   font-weight: 800;
+  font-size: 32px;
   line-height: 39px;
   letter-spacing: -1px;
   text-decoration: none;
@@ -30,6 +21,12 @@
   color: transparent;
 }
 
+.columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 36px;
+}
+
 .column {
   display: flex;
   flex-direction: column;
@@ -38,9 +35,9 @@
 
 .columnTitle,
 .link {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
-  line-height: 20px;
+  line-height: 18px;
   text-decoration: none;
 }
 
@@ -56,7 +53,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 72px;
+  margin-top: auto;
+  padding-top: 36px;
 }
 
 .phone {
@@ -76,17 +74,17 @@
 .social {
   display: flex;
   align-items: center;
-  gap: 18px;
+  gap: 14px;
 }
 
 .social img {
   display: block;
-  width: 24px;
-  height: 24px;
+  width: 22px;
+  height: 22px;
 }
 
 @media (width <= 430px) {
   .footer {
-    display: none;
+    display: flex;
   }
 }

@@ -28,3 +28,9 @@ body {
   min-height: 100vh;
   margin: 0 auto;
 }
+
+@media (width <= 430px) {
+  .app {
+    width: 430px;
+  }
+}

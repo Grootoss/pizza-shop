@@ -62,3 +62,9 @@
   width: 680px;
   height: auto;
 }
+
+@media (width <= 430px) {
+  .about {
+    display: none;
+  }
+}

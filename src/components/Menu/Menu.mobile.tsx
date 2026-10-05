@@ -1,6 +1,5 @@
 import { useState } from 'react'
-import styles from './Menu.module.css'
-import { MobileMenu } from './Menu.mobile'
+import styles from './Menu.mobile.module.css'
 
 const filling =
   'Filling: onion, potato, tomato, mushrooms, cheese, olives, meat.'
@@ -17,18 +16,18 @@ const pizzasBeforePopular: Pizza[] = [
   {
     name: 'Italian',
     price: '8,35 $',
-    image: '/images/pizza-italian-desktop.jpg',
+    image: '/images/pizza-italian-mobile.jpg',
   },
   {
     name: 'Venecia',
     price: '7,35 $',
-    image: '/images/pizza-venecia-desktop.jpg',
+    image: '/images/pizza-venecia-mobile.jpg',
   },
-  { name: 'Meat', price: '9,35 $', image: '/images/pizza-meat-desktop.jpg' },
+  { name: 'Meat', price: '9,35 $', image: '/images/pizza-meat-mobile.jpg' },
   {
     name: 'Cheese',
     price: '8,35 $',
-    image: '/images/pizza-cheese-desktop.jpg',
+    image: '/images/pizza-cheese-mobile.jpg',
   },
 ]
 
@@ -36,22 +35,22 @@ const pizzasAfterPopular: Pizza[] = [
   {
     name: 'Argentina',
     price: '7,35 $',
-    image: '/images/pizza-argentina-desktop.jpg',
+    image: '/images/pizza-argentina-mobile.jpg',
   },
   {
     name: 'Gribnaya',
     price: '6,35 $',
-    image: '/images/pizza-gribnaya-desktop.jpg',
+    image: '/images/pizza-gribnaya-mobile.jpg',
   },
   {
     name: 'Tomato',
     price: '7,35 $',
-    image: '/images/pizza-tomato-desktop.jpg',
+    image: '/images/pizza-tomato-mobile.jpg',
   },
   {
     name: 'Italian x2',
     price: '8,35 $',
-    image: '/images/pizza-italianx2-desktop.jpg',
+    image: '/images/pizza-italianx2-mobile.jpg',
   },
 ]
 
@@ -120,39 +119,35 @@ function PizzaGrid({ pizzas }: { pizzas: Pizza[] }) {
   )
 }
 
-export function Menu() {
+export function MobileMenu() {
   return (
-    <>
-      <section className={styles.menu}>
-        <h2 className={styles.title}>Menu</h2>
-        <div className={styles.filters}>
-          <button className={styles.filterActive} type="button">
-            Show All
-          </button>
-          <button className={styles.filter} type="button">
-            Meat
-          </button>
-          <button className={styles.filter} type="button">
-            Vegetarian
-          </button>
-        </div>
-        <div className={styles.categories}>
-          <button className={styles.categoryActive} type="button">
-            Sea products
-          </button>
-          <button className={styles.category} type="button">
-            Mushroom
-          </button>
-        </div>
-        <PizzaGrid pizzas={pizzasBeforePopular} />
-        <div className={styles.popular}>
-          <div className={styles.banner}>
-            <p className={styles.popularTitle}>MOST POPULAR PIZZA</p>
-          </div>
-        </div>
-        <PizzaGrid pizzas={pizzasAfterPopular} />
-      </section>
-      <MobileMenu />
-    </>
+    <section className={styles.menu}>
+      <h2 className={styles.title}>Menu</h2>
+      <div className={styles.filters}>
+        <button className={styles.filterActive} type="button">
+          Show All
+        </button>
+        <button className={styles.filter} type="button">
+          Meat
+        </button>
+        <button className={styles.filter} type="button">
+          Vegetarian
+        </button>
+      </div>
+      <div className={styles.categories}>
+        <button className={styles.categoryActive} type="button">
+          Sea products
+        </button>
+        <button className={styles.category} type="button">
+          Mushroom
+        </button>
+      </div>
+      <PizzaGrid pizzas={pizzasBeforePopular} />
+      <div className={styles.popular}>
+        <img src="/images/most-popular-mobile.jpg" alt="" />
+        <p className={styles.popularTitle}>MOST POPULAR PIZZA</p>
+      </div>
+      <PizzaGrid pizzas={pizzasAfterPopular} />
+    </section>
   )
 }
